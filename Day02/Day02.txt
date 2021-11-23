@@ -1,0 +1,15 @@
+Day02
+[ Front-End ]
+[ HTML 기초 ]
+사진에는 무조건 alt로 사진 설명 넣어주는게 좋음
+사진범위는 width / height
+input 태그 - 값 집어넣을 수 있는 태그
+둘중에 하나만: name(속성)
+submit: 데이터를 서버에 전송하는 버튼
+주의할 점
+type="button"   <- key-value 속성(attribute)
+selected        <- 단독   프로퍼티(property)
+id는 key같은 역할
+submit을 사용하면 enter키가 먹힌다. 그래서 로그인 시에 유용하다.
+F12를 통해 사이트 구성 보기
+남는 칸은 수동으로 제거해야함
