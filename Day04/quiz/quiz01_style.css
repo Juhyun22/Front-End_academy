@@ -1,0 +1,51 @@
+#year {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#month {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* #celender {
+    width: 840px;
+    height: 520px;
+} */
+
+#celender, th, td {
+    font-size: 15px;
+    /* font-weight: bold; */
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+th {
+    height: 25px;
+}
+
+#celender td {
+    text-align: left;
+    vertical-align: top;
+    padding: 10px;
+    width: 120px;
+    height: 100px;
+}
+
+td:hover {
+    background-color: rgb(178, 195, 228);
+}
+
+th:nth-child(1), td:nth-child(1) {
+    color: red;
+}
+
+.holiday {
+    font-weight: bold;
+    color: red;
+}
+
+#today {
+    font-weight: bold;
+    background-color: lightgoldenrodyellow;
+}
