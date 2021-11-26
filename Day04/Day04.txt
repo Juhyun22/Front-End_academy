@@ -1,0 +1,23 @@
+[ CSS ]
+[외부 스타일시트 연결 ]
+연결 css에서 body로 확인
+오른쪽 마우스 -> 검사를 통해서 크기나 범위 확인
+css에서 부모-자식관계로도 작성 가능
+#table1 > thead 모양. 정확한 부모-자식-그 밑에.. 그런걸 나타내줘야함
+테이블 테두리는 #table1, th, td {border: 1px solid #000; border-collapse: collapse;} 모양
+                                                 선 굵기 / 네모 / 색 / 선 충돌
+#table1 td {text-align: center;vertical-align: bottom;} 안의 텍스트 정렬
+table안에 여백 주는건 padding / 바깥쪽은 margin
+tr:hover은 tr에 마우스를 올렸을 때
+
+[ 외부 스타일시트 (2) ]
+테이블 모양 잘 확인해서 전체 테이블 범위를 조정할건지,
+칸 한칸을 조절할건지 잘 봐야함
+class와 id를 잘 생각하고 선언하자아앙
+저장하기는 보통 id를 saveBTN이라고 선언
+
+[ 레이아웃(Layout) ]
+div 태그 - 한 행에 혼자만 위치. h1,2,...6과 비슷함
+div에서 padding하면 모양도 같이 변한다. 그래서 margin 많이 씀
+flex = div 붙이기 / justify-content: center는 div 중간 정렬
+flex는 무조건 1차 자식한테만 가능
