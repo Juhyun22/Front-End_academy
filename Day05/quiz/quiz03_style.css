@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+}
+
+#wrap {
+    width: 1200px;
+    background-color: rgb(185, 211, 238);
+}
+
+header {
+    width: 1200px;
+    height: 100px;
+    background-color: khaki;
+}
+
+.contents {
+    width: 1200px;
+    height: 600px;
+    background-color: lawngreen;
+}
+
+.foots {
+    width: 1200px;
+    height: 100px;
+    background-color: lightcoral;
+}
+
+.flex {
+    display: flex;
+}

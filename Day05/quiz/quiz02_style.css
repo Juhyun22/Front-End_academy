@@ -1,0 +1,38 @@
+* {margin: 0px;}
+
+#wrap {
+    width: 1200px;
+    height: 1000px;
+    background-color: gray;
+}
+
+header {
+    width: 1200px;
+    height: 200px;
+    background-color: greenyellow;
+    display: flex;
+}
+
+.sec1 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+.sec2 {
+    width: 1000px;
+    height: 200px;
+    background-color: darkcyan;
+}
+
+section {
+    width: 1200px;
+    height: 700px;
+    background-color: darkgoldenrod;
+}
+
+footer{
+    width: 1200px;
+    height: 100px;
+    background-color: darkorange;
+}

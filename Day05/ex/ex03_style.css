@@ -1,0 +1,55 @@
+* { /* 가운데 정렬시 margin:auto */
+    margin: auto;
+}
+
+#wrap {
+    width: 1200px;
+    background-color: #999;
+}
+
+header {
+    width: 1200px;
+    height: 100px;
+    background-color: rgb(251, 209, 195);
+}
+
+nav {
+    width: 1200px;
+    height: 50px;
+    background-color: darkseagreen;
+}
+
+.contents {
+    width: 1200px;
+    height: 450px;
+    background-color: rgb(192, 249, 250);
+}
+
+.contents > .content1 {
+    width: 70%;
+    height: 450px;
+    background-color: floralwhite;
+}
+
+.contents > aside {
+    width: 30%;
+    height: 450px;
+    background-color: rgb(167, 230, 167);
+}
+
+.contents > .content1 > .article1 {
+    width: 90%;
+    height: 200px;
+    background-color: grey;
+    margin-top: 15px;
+}
+
+footer {
+    width: 1200px;
+    height: 200px;
+    background-color: rgb(243, 194, 220);
+}
+
+.flex {
+    display: flex;
+}
