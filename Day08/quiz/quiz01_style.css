@@ -1,0 +1,9 @@
+header {height: 100px;}
+.logo-text {font-size: 40px; color: darkcyan;}
+.logo-text:hover {text-decoration: none; color: darkcyan;}
+.nav-item .nav-link {color: darkcyan;}
+.nav-item .nav-link:hover {color: cyan;}
+
+.contents {height: 500px;}
+.article-logo {color: darkcyan;}
+footer {height: 80px;}

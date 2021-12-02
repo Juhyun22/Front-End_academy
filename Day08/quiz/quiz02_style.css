@@ -1,0 +1,15 @@
+header {height: 100px;}
+.logo {font-size: 50px;}
+.up-menu-font {font-size: 10px;}
+.up-menu-font .nav-link {color: gray;}
+
+nav {height: 50px;}
+.menu-box .nav-link {color: black;}
+
+.contents {height: 800px;}
+.best-seller {font-size: 25px;}
+
+article {height: 350px;}
+
+footer {height: 80px;}
+.copyright-class {color: gray; font-size: 10px;}
