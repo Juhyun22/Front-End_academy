@@ -1,0 +1,14 @@
+/*#wrap {height:1000px;}   마지막에 높이를 없앤다. */
+
+header {height:100px;}
+.logo {height:50px; font-size:30px;}
+
+nav {height:50px;}
+.contents {height:300px;}
+footer {height:100px;}
+
+/* 
+    .text-{color} 클래스를 주면 hover가 먹히지 않는 현상 발생.
+    해결하려면 아래와 같이 주거나, 부트스트랩이 아닌 CSS로 컬러를 따로 주어야 한다.
+ */
+.nav-item .nav-link:hover {color: #fff !important;}
