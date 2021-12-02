@@ -1,0 +1,6 @@
+[ 웹페이지 완성하기1 ]
+input type="text" class="form-control" 모든 입력 및 검색은 이제 이걸로
+input-group-append 검색을 붙혀서
+display-4는 글씨 크기
+#ddd는 밝은 회색
+메뉴는 class변경 / 칸 바뀌는거는 레이아웃 사이트. flex-wrap
