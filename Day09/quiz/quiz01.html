@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>상맨: 상 남자의 패션몰</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" type="text/css" href="quiz01_style.css">
+    </head>
+    <body>
+        <div id="wrap" class="container">
+            <header class="d-flex">
+                <!-- 검색 영역 -->
+                <div class="search col-4 d-flex align-items-end"> <!-- 검색을 아래로 정렬 -->
+                    <div class="input-group mb-1 d-flex">
+                        <input type="text" class="form-control">
+                        <div class="input-group-append"> 
+                        <button type="button" class="input-group-text btn">검색</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 로고 -->
+                <div class="logo col-4 d-flex justify-content-center align-items-center">
+                    <div>
+                        <div class="display-4">상 맨</div>
+                        <div class="text-center">상 남자의 패션몰</div>
+                    </div>
+                </div>
+                <nav class="header-menu col-4 d-flex align-items-end">
+                    <ul class="nav">
+                        <li class="nav-item"><a href="#" class="nav-link top-menu-font">로그인</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link top-menu-font">회원가입</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link top-menu-font">고객센터</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link top-menu-font">장바구니</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- 중간 메뉴 -->
+            <nav class="menu d-flex align-items-center">
+                <ul class="nav nav-fill w-100">
+                    <li class="nav-item"><a href="#" class="nav-link menu-font">Outer</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link menu-font">Top</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link menu-font">Shirts</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link menu-font">Pants</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link menu-font">Accessory</a></li>
+                </ul>
+            </nav>
+
+            <!-- 배너 -->
+            <section class="banner">
+                <img src="q1_main_banner.jpg" alt="배너 사진" width="1110px" height="400px">
+            </section>
+
+            <!-- 상품 영역 -->
+            <section class="contents">
+                <h2>Best Seller</h2>
+
+                <!-- 상품 목록 -->
+                <div class="d-flex justify-content-between">
+                    <article>
+                        <img src="q1_best1.jpg" alt="상품1">
+                        <div class="font-weight-bold">리얼 가죽 무스탕</div>
+                        <div class="text-secondary"><del>87,000원</del></div>
+                        <div>55,000원</div>
+                    </article>
+                    <article>
+                        <img src="q1_best2.jpg" alt="상품2">
+                        <div class="font-weight-bold">[1+1] 기본 반팔티</div>
+                        <div class="text-secondary"><del>15,000원</del></div>
+                        <div>7,000원</div>
+                    </article>
+                    <article>
+                        <img src="q1_best3.jpg" alt="상품3">
+                        <div class="font-weight-bold">정장 스타일 무지 조끼</div>
+                        <div class="text-secondary"><del>45,000원</del></div>
+                        <div>40,000원</div>
+                    </article>
+                    <article>
+                        <img src="q1_best4.jpg" alt="상품4">
+                        <div class="font-weight-bold">스키니핏 씨블루 정장 자켓</div>
+                        <div class="text-secondary"><del>53,000원</del></div>
+                        <div>45,000원</div>
+                    </article>
+                    <article>
+                        <img src="q1_best5.jpg" alt="상품5">
+                        <div class="font-weight-bold">프리미엄 올라운드 데님셔츠</div>
+                        <div class="text-secondary"><del>33,000원</del></div>
+                        <div>30,000원</div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- 하단 영역 -->
+            <footer class="d-flex align-items-center justify-content-center">
+                <div class="text-center text-secondary footer-font">
+                    회사: Sangnam 대표:김상남<br>
+                    주소: 서울시 종로구 이무개로 32번길 93 패션타운 806호<br>
+                    사업자 번호:1010101010-1010101000<br>
+                    Copyright 2021. sangnam All Right Reserved.
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

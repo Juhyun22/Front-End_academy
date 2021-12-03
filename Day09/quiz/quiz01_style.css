@@ -1,0 +1,14 @@
+header {height: 100px;}
+header .top-menu-font {font-size: 13px; color: #888;}
+header .top-menu-font:hover {color: black;}
+
+.menu {height: 50px; background-color: #ddd;}
+.menu .menu-font {color: gray; font-weight:bold;}
+.menu .menu-font:hover {color:black;}
+
+.banner {height: 400px;}
+
+.contents {height: 420px;}
+
+footer {height: 100px;}
+footer .footer-font {font-size: 13px;}
