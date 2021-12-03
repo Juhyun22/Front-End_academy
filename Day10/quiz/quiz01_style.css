@@ -1,0 +1,17 @@
+#wrap {width: 1200px; margin: auto;}
+
+header {height: 100px;}
+.icon .icon-box {font-size: 40px;}
+.icon .icon-box:hover {text-decoration: none;}
+.login .login-font {color: black;}
+.login .login-font:hover {color: red;}
+
+.contents {height: 530px;}
+.contents > div {background-color: lightgray;}
+.nav-item:hover {background-color: gray;}
+.menu-font {color: black; font-weight: bold;}
+.content .content-font {font-size: 15px; color: rgb(93, 91, 91);}
+.media-box {width: 300px;}
+
+footer {height: 50px;}
+.copyright {color: gray; font-size: small;}

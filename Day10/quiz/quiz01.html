@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>iTube</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+           
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" type="text/css" href="quiz01_style.css">
+    </head>
+    <body>
+        <div id="wrap">
+            <!-- upper side -->
+            <header class="d-flex">
+                <!-- icon -->
+                <div class="icon col-2 d-flex justify-content-center align-items-center">
+                    <a href="#" class="text-danger font-weight-normal icon-box">iTube</a>
+                </div>
+
+                <!-- search -->
+                <div id="search" class="col-7 d-flex align-items-center">
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <div class="input-group-append">
+                          <button type="button" class="input-group-text btn btn-input">검색</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- login -->
+                <nav class="login col-3 d-flex align-items-center">
+                    <ul class="nav">
+                        <li class="nav-item"><a href="#" class="nav-link login-font">신보람</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link login-font">로그아웃</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="contents d-flex">
+                
+                <!-- aside menu -->
+                <aside class="menu col-2">
+                    <nav class="meu-box">
+                        <!-- 수직 방향 메뉴: nav + flex-colum -->
+                        <ul class="nav flex-colum">
+                            <li class="nav-item w-100"><a href="#" class="nav-link menu-font">추천 동영상</a></li>
+                            <li class="nav-item w-100"><a href="#" class="nav-link menu-font">탐색</a></li>
+                            <li class="nav-item w-100"><a href="#" class="nav-link menu-font">시청기록</a></li>
+                            <li class="nav-item w-100"><a href="#" class="nav-link menu-font">나중에 볼 동영상</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+
+                <!-- videoes -->
+                <section class="contents col-10">
+                    <div class="d-flex flex-wrap justify-content-around">
+                        <article class="media-box">
+                            <img src="test06_thumbnail1.jpg" alt="썸네일1">
+                            <div class="font-weight-bold">[직캠]잇츠원 유태양 - ♬ 왕과비</div>
+                            <div class="content-font">N-net Ent<br>
+                            조회수: 80만회 1개월전</div>
+                        </article>
+                        <article class="media-box">
+                            <img src="test06_thumbnail2.jpg" alt="썸네일2">
+                            <div class="font-weight-bold">[직캠]아이즈원 권은비 - ♬ Paranoma</div>
+                            <div class="content-font">N-net Ent<br>
+                            조회수: 80만회 1개월전</div>
+                        </article>
+                        <article class="media-box">
+                            <img src="test06_thumbnail3.jpg" alt="썸네일3">
+                            <div class="font-weight-bold">[직캠]스트레이트 키즈 니노 - ♬ 미친놈</div>
+                            <div class="content-font">N-net Ent<br>
+                            조회수: 80만회 1개월전</div>
+                        </article>
+                        <article class="media-box">
+                            <img src="test06_thumbnail4.jpg" alt="썸네일4">
+                            <div class="font-weight-bold">[직캠]아이즈원 장원영 - ♬ 파라노마</div>
+                            <div class="content-font">N-net Ent<br>
+                            조회수: 80만회 1개월전</div>
+                        </article>
+                        <article class="media-box">
+                            <img src="test06_thumbnail5.jpg" alt="썸네일5">
+                            <div class="font-weight-bold">[직캠]NTC DREAM 제노  - ♬ 맛(Hot Sauce)</div>
+                            <div class="content-font">N-net Ent<br>
+                            조회수: 80만회 1개월전</div>
+                        </article>
+                        <article class="media-box">
+                            <img src="test06_thumbnail6.jpg" alt="썸네일6">
+                            <div class="font-weight-bold">[직캠]아이즈원 미야와키 사쿠라 - ♬ Panorama</div>
+                            <div class="content-font">N-net Ent<br>
+                            조회수: 80만회 1개월전</div>
+                        </article>
+                    </div>
+                </section>
+            </section>
+            <!-- bottom part -->
+            <footer>
+                <!-- copyright -->
+                <div class="copyright d-flex justify-content-center align-items-center">
+                    Copyright 2021. iTune All Right Reserved
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
