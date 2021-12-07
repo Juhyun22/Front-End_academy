@@ -1,0 +1,15 @@
+[ 자바스크립트 ]
+[ 문자열 문제 ]
+4. 배열 안에 있는 값은 주소값이기 때문에 루프 돌때마다 새롭게 선언한다.
+ 
+[ HTML과 자바스크립트 ]
+DOM
+<a href="#" target="_blank"></a> _blank는 새로운 화면
+id로 Node 가져오기: id는 문서에서 하나이므로 한개의 노드를 얻는다.
+ 
+[ jQuery 프레임워크 ]
+view 프레임워크 -> react, vue
+ready 함수 : DOM Tree가 모두 구성된 후 불려지는 함수
+alert로 확인 먼저!
+console 띄워놓고 에러 없는지 확인
+val()과 text()는 다름. 
