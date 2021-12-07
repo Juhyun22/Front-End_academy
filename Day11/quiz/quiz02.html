@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>반복문과 자료구조 문제 풀이</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            // 1. 반복 alert 출력
+            for (let i = 0; i < 5; i++) {
+                // alert(i + 1);
+            }
+
+            // 2. 합 구하기
+            var array = [5, 4, 23, 7, 11, 10, 15, 20, 15, 8];
+            var sum = 0;
+
+            // 1) for문
+            for (let i = 0; i < array.length; i++) {
+                sum += array[i];
+            }
+            console.log(sum);
+
+            // 2) for of
+            sum = 0;
+            for (let value of array) {
+                sum += value;
+            }
+            console.log(sum);
+
+            // 3) for in
+            sum = 0;
+            for (let idx in array) {
+                sum += array[idx];
+            }
+            console.log(sum);
+
+            // 3. 값 출력하기
+            var goods = {"name": "육개장", "price": 1300, "expirationDate":"2021/07/04"};
+            console.log("제품 : " + goods.name + ", 가격 : " + goods.price + "원, 유통기한 : " + goods.expirationDate);
+
+            // 4. 맛집 리스트
+            var restaurantList = [
+            {"name":"토속촌", "menu":"한식", "location":"서울 종로구"}, 
+            {"name":"아이러브떡볶이", "menu":"분식", "location":"서울 중구"}, 
+            {"name":"영동족발", "menu":"고기", "location":"서울 서초구"}, 
+            {"name":"연돈", "menu":"일식", "location":"제주도"}, 
+            {"name":"쿠이", "menu":"양식", "location":"부산"},
+            {"name":"하남돼지집", "menu":"고기", "location":"성남시 분당구"}
+            ];
+
+            for (let i = 0; i < restaurantList.length; i++) {
+                let menuObj = restaurantList[i];
+                if (menuObj.menu != "고기") {
+                    console.log("상호명: " + menuObj.name + ", 위치: " + menuObj.location);
+                }
+            } 
+        </script>
+    </body>
+</html>

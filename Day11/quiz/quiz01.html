@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>자바스크립트 문제</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            // 1. 변수를 사용해서 연산하고 alert창에 아래와 같이 출력하세요.
+            let num1 = 5;
+            let num2 = 8;
+            // 5 X 8 = 40
+            // alert(num1 + " X " + num2 + " = " + (num1 * num2));
+
+            // 2. 변수 console 출력
+            var number1 = 12;
+            var number2 = 34;
+            console.log(number1 + "" + number2);
+            console.log(String(number1) + String(number2));
+
+            // 3. 변수 비교
+            var number1 = 10;
+            var number2 = "10";
+            if (number1 === number2) {
+                console.log("두 값은 같고 타입도 같다.");
+            } else {
+                console.log("두 값은 같지 않다.");
+            }
+
+           // 4. 변수 비교
+           let score;      // undefined. not string. not null.
+           let number = null;
+
+           // == 연산자 : undefined와 null을 비어있다고 취급한다.(같다)
+           if (score == number) {
+               console.log(true);
+           }
+
+           // === 연산자 : 타입이 모두 일치할 때만 true
+           if (score === undefined && number === null) {
+            console.log(true);
+           }
+
+           // 5. alert 띄우기
+           // var userId = "marobiana";
+           // var userId;   // undefined
+           var userId = "";
+           // var userId = null;
+            //    if (userId == null || userId == "") {
+            //         alert("비정상적인 접근입니다.")
+            //    } else {
+            //        alert("안녕하세요 " + userId + "님");
+            //    }
+
+            // 6. 지역변수
+            var word1 = "hello"
+
+            if (word1 == "hello") {
+                // let은 지역변수 var은 global변수
+                var word2 = " word";
+            }
+
+            console.log(word1 + word2);
+        </script>
+    </body>
+</html>
