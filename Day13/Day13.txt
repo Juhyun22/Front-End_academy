@@ -1,0 +1,10 @@
+[ jQuery 프레임워크 ]
+[ 동적 태그 다루기 (1) - ready, click 이벤트 ]
+consol.log()와 화면의 console을 통해 에러 확인
+css는 파일 따로해서 선언.
+<script>태그는 보통 body안에 다른거 다 선언한 뒤에 있음
+서버에 보내는 데이터를 최소화하기 위해서, if문의 return으로 정리한다.
+초반에 alert();를 통해서 초반 오류 확인
+변수 만드는 곳 - 최대한 범위 적게 해서
+==나 ===는 똑같은지 확인함. 그래서 어느 배열에 포함된거는 includes로 쓰는게 좋음
+validation check 코드는 return;으로 끝내는 것이 좋음
