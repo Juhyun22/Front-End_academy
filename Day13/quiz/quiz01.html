@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>문제1</title>
+        <meta charset="utf-8">
+
+        <!-- jQuery 선언 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" 
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+        crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" type="text/css" href="quiz01_style.css">
+
+        <script>
+            $(document).ready(function(e) {
+                // 1. 비밀번호 일치
+                $('#pwdBtn').on('click', function(e) {
+                    let pwd = $('#pwd').val();
+                    let checkpwd = $('#checkpwd').val();
+
+                    if (pwd == '' || checkpwd.length < 1) {
+                        alert("비밀번호를 입력해주세요.");
+                        return; // 서버 전송시에는 return으로 끝내는 것이 좋음
+                    }
+
+                    if (pwd != checkpwd) {
+                        alert("비밀번호가 일치하지 않습니다.");
+                        return;
+                    }
+
+                    alert("확인 완료");
+                });
+
+                // 2. 금칙어 포함 여부 확인
+                $('#checktextBtn').on('click', function(e) {
+                    var bannedWords = ["십장생", "시베리아", "조카신발", "쌍쌍바", "십원짜리"];
+                    let text = $('#text').val();
+
+                    for (let bannedWord of bannedWords) {
+                        if (text.includes(bannedWord)) {
+                            alert("금칙어가 포함되어 있습니다. 검색할 수 없습니다.");
+                            return;
+                        } 
+                    }
+
+                    // TODO... 검색로직
+                    alert("검색 시작!");
+                });
+
+                // 3. 더보기
+                $('#seemoreBtn').on('click', function(e) {
+                    if ($('#seemoreBox').is(':visible')) { 
+                        // 보여지고 있음
+                        // 1. div를 숨긴다.
+                        // 2. 버튼을 '더보기'로 바꾼다.
+                        $('#seemoreBox').hide();
+                        $('#seemoreBtn').text('더보기');
+                    } else {
+                        // 보여지고 있지 않음
+                        // 1. div를 보여지게 바꾼다.
+                        // 2. 버튼을 '닫기'로 바꾼다.
+                        $('#seemoreBox').show();
+                        $('#seemoreBtn').text('닫기');
+                    }
+                });
+
+                // 4. 사각형 바꾸기
+                $('#changeboxBtn').on('click', function(e) {
+                    // box2가 있는 경우: box2 제거, changed-box 추가
+                    // box2가 없는 경우: box2 추가, changed-box 제거
+                    if ($('#changeBox').hasClass('box2')) {
+                        $('#changeBox').removeClass('box2');
+                        $('#changeBox').addClass('changed-box');
+                    } else {
+                        $('#changeBox').removeClass('changed-box');
+                        $('#changeBox').addClass('box2');
+                    }
+                });
+
+                // 5. 이미지 교체
+                var imgArr = ['cat01.jpg', 'cat02.jpg', 'cat03.jpg'];
+                var i = 0;
+                
+                $('#changeBefBnt').on('click', function(e) { // 누르면
+                    i++;
+                    if (i == imgArr.length) {
+                        i = 0;
+                    }
+                    $('#imgBox').attr('src', imgArr[i]); // 바뀐다..
+                });
+                $('#changeAtrBnt').on('click', function(e) {
+                    i++;
+                    if (i == imgArr.length) {
+                        i = 0;
+                    }
+                    $('#imgBox').attr('src', imgArr[i]);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <!-- 1. 비밀번호 일치 -->
+        <h2>1. 비밀번호 일치</h2>
+        비밀번호:<input type="password" id="pwd">
+        비밀번호 확인:<input type="password" id="checkpwd">
+        <button type="button" id="pwdBtn">확인</button>
+        <hr>
+
+        <!-- 2. 금칙어 포함 여부 확인 -->
+        <h2>2. 금칙어 포함 여부 확인</h2>
+        <input type="text" id="text">
+        <button type="button" id="checktextBtn">검색</button>
+        <hr>
+
+        <!-- 3. 더보기 -->
+        <h2>3. 더보기</h2>
+        <button type="button" id="seemoreBtn">더보기</button>
+        <div id="seemoreBox" class="box1">숨겨져 있던 추가 설명입니다!!!<br>더보기를 누르면 나옵니다.</div>
+        <hr>
+
+        <!-- 4. 사각형 바꾸기 -->
+        <h2>4. 사각형 바꾸기</h2>
+        <div id="changeBox" class="box2"></div><br>
+        <button type="button" id="changeboxBtn">교체</button>
+        <hr>
+
+        <!-- 5. 이미지 교체 -->
+        <h2>5. 이미지 교체</h2>
+        <button type="button" id="changeBefBnt">이전</button>
+        <img src="cat01.jpg" alt="image1" id="imgBox" class="imgBox">
+        <button type="button" id="changeAtrBnt">다음</button>
+    </body>
+</html>
