@@ -1,0 +1,6 @@
+header {height: 80px;}
+
+.contents {height: 400px;}
+
+footer {height: 50px; background-color: #f4f4f4;}
+footer > address{height: 50px; font-size: 13px; color: gray;}
