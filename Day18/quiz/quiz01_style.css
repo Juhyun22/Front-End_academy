@@ -1,0 +1,19 @@
+#wrap {width: 1200px; margin: auto;}
+
+header {height: 100px;}
+.icon-font {font-size: 50px;}
+
+nav {height: 50px; background-color: rgb(210, 143, 20);}
+
+#contents {height: 900px;}
+#picture {height: 500px;}
+#reservePart {height: 400px;}
+#reserveNow {background-color: rgb(169, 91, 31);}
+.reserve-now {font-size: 60px;}
+.reserve-now:hover {text-decoration: none;}
+#checkReservation {background-color: rgb(196, 111, 20);}
+.check-reserve {font-size: 30px;}
+#reserveCall {background-color: rgb(169, 91, 31);;}
+
+footer {height:100px;}
+.copyright {color: gray; font-size: 13px;}
